@@ -12,7 +12,9 @@ int main(){
 
     char letter;
     while(answer!=codeword && misses<7){
+        
         display_misses(misses);
+        std::cout << "Misses: "<< misses << "\n";
         std::cout << "Please Enter Your Guess: ";
         std::cin >> letter;
         for (int i=0;i<codeword.size();i++){
@@ -26,7 +28,7 @@ int main(){
             std::cout << "\nCorrect!";
         }
         else{
-            std::cout << "\nIncorrect! The tractor veam pulls the person in further.";
+            std::cout << "\nIncorrect! The tractor veam pulls the person in further.\n";
             incorrect.push_back(letter);
             misses++;
         }

@@ -1,0 +1,2 @@
+g++ ufo.cpp ufoFun.cpp -o ufo.o
+./ufo.o

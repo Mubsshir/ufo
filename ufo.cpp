@@ -1,18 +1,27 @@
 #include<iostream>
 #include<vector>
+#include<stdlib.h>
+#include<time.h>
 #include "ufo.hpp"
 
 int main(){
     great();
-    std::string codeword="codecademy";
-    std::string answer="__________";
+    std::vector<std::string> codewords {"Khan","Mubasshir","Hello","World"};
+    std::string codeword;
+    std::string answer;
     int misses=0;
     std::vector<char> incorrect{};
-    bool guess= false;
+    srand(time(NULL));
+    int rn=rand()%codewords.size();
+    codeword=codewords[rn];
+    for (int I=0;I<codeword.size();I++){
+        answer+="_";
+    }
+    
 
     char letter;
     while(answer!=codeword && misses<7){
-        
+        bool guess= false;
         display_misses(misses);
         std::cout << "Misses: "<< misses << "\n";
         std::cout << "Please Enter Your Guess: ";

@@ -21,7 +21,8 @@ jgs  __||__//
      | || |
      \ || /                   Game
    __/ || \__
-  \____/\____/        Programed By -  M u b a s s h i r    K h a n    
+  \____/\____/       
+   Programed By - M u b a s s h i r    K h a n    
 )" << '\n';
   sleep(1);
 

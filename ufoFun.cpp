@@ -27,7 +27,7 @@ jgs  __||__//
   sleep(1);
 
 }
-void great(){
+void greet(){
     sleep(2);
     std::system("clear");
     std::cout << "=============\n";
